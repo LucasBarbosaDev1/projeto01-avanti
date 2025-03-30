@@ -38,3 +38,39 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % slideCount;
   goToSlide(currentIndex);
 }, 4000);
+
+// carroussel lancamentos
+const slidesLaunch = document.querySelector('.slides-launch');
+const slidesLaunchSecondary = document.querySelector('.slides-launch-secondary');
+const widthWindow = window.innerWidth;
+
+function scrollCarousel(direction) {
+
+  if (widthWindow < 768) {
+    
+    if (direction === -1) {
+      slidesLaunch.scrollBy({ left: -150, behavior: 'smooth' });
+      slidesLaunchSecondary.scrollBy({ left: -150, behavior: 'smooth' });
+    };
+  
+    if (direction === 1) {
+      slidesLaunch.scrollBy({ left: 150, behavior: 'smooth' });
+      slidesLaunchSecondary.scrollBy({ left: 150, behavior: 'smooth' });
+    };
+
+  } else {
+    
+    if (direction === -1) {
+      slidesLaunch.scrollBy({ left: -300, behavior: 'smooth' });
+      slidesLaunchSecondary.scrollBy({ left: -300, behavior: 'smooth' });
+    };
+  
+    if (direction === 1) {
+      slidesLaunch.scrollBy({ left: 300, behavior: 'smooth' });
+      slidesLaunchSecondary.scrollBy({ left: 300, behavior: 'smooth' });
+    };
+
+  }
+
+  
+}
