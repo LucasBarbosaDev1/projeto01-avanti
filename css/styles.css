@@ -442,6 +442,85 @@
   display: none;
 }
 
+/* section descricao */
+.c-description{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.description-card{
+  max-width: 1177px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.description-image > img{
+  width: 100%;
+}
+
+.description{
+  padding: 22px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.description > p{
+  font-size: 14px;
+}
+
+#c-description-color{
+  width: 100%;
+  height: auto;
+  background-color: #DEDEDE;
+}
+
+.description-image2{
+  padding: 22px 16px;
+  max-width: 1177px;
+}
+
+.description2{
+  max-width: 1260px;
+  padding: 0 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #4F4F4F;
+}
+
+.sub-description{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 0;
+}
+
+.sub-description-image{
+  min-width: 60px;
+  min-height: 60px;
+  background-color: #005CFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.sub-description-image > img{
+  width: 30px;
+}
+
+.sub-description > p{
+  font-size: 14px;
+  text-align: left;
+}
+
 /* responsividade */
 @media (min-width: 768px) {
 
@@ -475,6 +554,19 @@
 
   .price-product > div{
     right: 35%;
+  }
+
+  /* section descricao */
+  .description-card{
+    flex-direction: row;
+  }
+
+  .description-image > img{
+    min-width: 420px;
+  }
+
+  .description-card2{
+    flex-direction: row-reverse;
   }
 
 }
@@ -532,4 +624,41 @@
     display: block;
   }
 
+  /* section descricao */  
+  .description-card{
+    gap: 30px;
+  }
+
+  .description-image > img{
+    min-width: 650px;
+  }
+
+  .description-image2{
+    padding: 50px 16px;
+  }
+
+  .description, .description2 > h2{
+    font-size: 30px;
+  }
+
+  .description > p{
+    font-size: 18px;
+  }
+
+  .description2{
+    gap: 20px;
+  }
+  
+  .sub-description > p {
+    font-size: 18px;
+  }
+
+  .sub-description-image{
+    min-width: 90px;
+    min-height: 90px;
+  }
+
+  .sub-description-image > img{
+    width: 45px;
+  }
 }
