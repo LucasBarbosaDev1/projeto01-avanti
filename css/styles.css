@@ -443,7 +443,7 @@
 }
 
 /* section descricao */
-.c-description{
+#c-description{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -519,6 +519,38 @@
 .sub-description > p{
   font-size: 14px;
   text-align: left;
+}
+
+/* section disponibilidade */
+#c-availability{
+  height: 390px;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+#background{
+  position: absolute;
+  background-image: url('../assets/main-image2.png');
+  background-size: cover;
+  background-position: center;
+  filter: blur(1px);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+}
+
+#availability-text {
+  width: 100%;
+  padding: 15px 0;
+  background-color: #005CFF;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  z-index: 999;
 }
 
 /* responsividade */
@@ -660,5 +692,17 @@
 
   .sub-description-image > img{
     width: 45px;
+  }
+
+  /* section disponibilidade */
+  #c-availability{
+    height: 660px;
+    margin: 50px 0;
+  }
+
+  #availability-text {
+    padding: 45px 0;
+    font-size: 30px;
+    font-weight: 400;
   }
 }
