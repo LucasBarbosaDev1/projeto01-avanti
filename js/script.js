@@ -70,7 +70,45 @@ function scrollCarousel(direction) {
       slidesLaunchSecondary.scrollBy({ left: 300, behavior: 'smooth' });
     };
 
-  }
+  };
 
+};
+
+// collapse
+const collapseButtons = document.querySelectorAll('.collapse-button');
+const content1 = document.querySelector('.content1');
+const content2 = document.querySelector('.content2');
+const content3 = document.querySelector('.content3');
+
+function btnCollapse(content) {  
   
-}
+  if (content === "collapse1") {
+    content1.classList.toggle('collapse-active');
+    content1.previousElementSibling.children[1].classList.toggle('button-active');
+    
+    content2.classList.remove('collapse-active');
+    content3.classList.remove('collapse-active');
+    content2.previousElementSibling.children[1].classList.remove('button-active');
+    content3.previousElementSibling.children[1].classList.remove('button-active');
+
+  } else if (content === "collapse2") {
+    content2.classList.toggle('collapse-active');
+    content2.previousElementSibling.children[1].classList.toggle('button-active');
+    
+    content1.classList.remove('collapse-active');
+    content3.classList.remove('collapse-active');
+    content1.previousElementSibling.children[1].classList.remove('button-active');
+    content3.previousElementSibling.children[1].classList.remove('button-active');
+
+  } else {
+    content3.classList.toggle('collapse-active');
+    content3.previousElementSibling.children[1].classList.toggle('button-active');
+    
+    content2.classList.remove('collapse-active');
+    content1.classList.remove('collapse-active');
+    content2.previousElementSibling.children[1].classList.remove('button-active');
+    content1.previousElementSibling.children[1].classList.remove('button-active');
+
+  };
+
+};
