@@ -1,3 +1,9 @@
+// padding main
+const cHeader = document.querySelector('header').offsetHeight;
+const cMain = document.querySelector('main');
+
+cMain.style.paddingTop = `${cHeader}px`;
+
 // carroussel
 const carousel = document.querySelector('#carousel');
 const slides = document.querySelector('#slides');

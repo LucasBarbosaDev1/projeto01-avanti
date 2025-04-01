@@ -8,6 +8,14 @@
 }
 
 /* ---header--- */
+header{
+  position: fixed;
+  z-index: 2;
+  background-color: #fff;
+  box-shadow: 0 0 5px #0000005b;
+  width: 100%;
+}
+
 /* alerta de promocao */
 #alert-sale{
   background-color: #005CFF;
@@ -550,7 +558,7 @@
   color: #fff;
   text-align: center;
   font-weight: 600;
-  z-index: 999;
+  z-index: 1;
 }
 
 /* section cadastro */
