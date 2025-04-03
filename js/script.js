@@ -1,6 +1,75 @@
+// collapse nav desktop header
+const cotainer2Header = document.querySelector('#cotainer2-header');
+const allCategories = document.querySelector('#primary-li');
+const collapseNavHeader = document.querySelector('#collapse-nav-header');
+const collapseItems = document.querySelector('#collapse-items');
+const collapseCategoriesTitle = document.querySelector('#collapse-categories-title');
+const categories = document.querySelectorAll('.category');
+const cMain = document.querySelector('main');
+
+// guarda a categoria destacada
+let liActive = null;
+
+categories.forEach(li => {
+
+  // se liActive for != de null && != do liAtual
+  function resetStyleCategory() {
+
+    if ((liActive !== null) && (liActive !== this)) {
+      liActive.style.color = '#000';
+      liActive.style.fontWeight = 400;
+    };
+
+  };
+
+  function resetStyleLi() {
+    allCategories.style.color = '#000';
+  
+    collapseNavHeader.style.display = "none";
+    collapseItems.style.display = "flex";
+    
+    resetStyleCategory();
+  };
+
+  li.addEventListener('mouseover', function() {
+    resetStyleCategory();
+
+    // aplica o estilo na categoria atual
+    this.style.color = '#005CFF';
+    this.style.fontWeight = 700;
+
+    collapseNavHeader.style.display = "flex";
+    collapseItems.style.display = "none";
+    collapseCategoriesTitle.style.display = "block";
+
+    allCategories.style.color = '#000';
+
+    // atualiza a categoria destacada
+    liActive = this;
+  });
+
+  allCategories.addEventListener('mouseover', () => {
+    allCategories.style.color = '#005CFF';
+
+    collapseNavHeader.style.display = "flex";
+    collapseItems.style.display = "flex";
+    collapseCategoriesTitle.style.display = "none";
+
+    resetStyleCategory();
+  });
+
+  cotainer2Header.addEventListener('mouseover', () => {
+    resetStyleLi();
+  });
+
+  cMain.addEventListener('mouseover', () => {
+    resetStyleLi();
+  });
+
+});
+
 // padding main
 const cHeader = document.querySelector('header').offsetHeight;
-const cMain = document.querySelector('main');
 
 cMain.style.paddingTop = `${cHeader}px`;
 
@@ -12,16 +81,19 @@ const pointsConteiner = document.querySelector('#navigation-carousel');
 
 let currentIndex = 0;
 
-// cria os pontos de navegacao
+// //cria os pontos de navegacao
 for (let i = 0; i < slideCount; i++) {
   const point = document.createElement('div');
   point.classList.add('point');
+
   if (i === 0) {
     point.classList.add('active');
   };
+
   point.addEventListener('click', () => {
     goToSlide(i);
   });
+
   pointsConteiner.appendChild(point);
 };
 
@@ -36,6 +108,7 @@ function updatePoints() {
 function goToSlide(index) {
   currentIndex = index;
   const offset = -index * 100;
+
   slides.style.transform = `translateX(${offset}%)`;
   updatePoints();
 };
