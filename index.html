@@ -32,10 +32,18 @@
 
       </div>
 
-      <div class="container-search">
-        <input type="text" name="search" class="i-text" placeholder="Digite aqui o que você procura">
-        <img src="assets/lupa.png" alt="lupa-pesquisa">
-      </div>
+      <form class="container-search">
+        <input type="text" name="search" class="i-text" placeholder="Digite aqui o que você procura" required>
+
+        <button type="submit">
+          <img src="assets/lupa.png" alt="lupa-pesquisa">
+        </button>
+
+        <div class="search-result">
+          <p>Você buscou por: <span class="subject">assunto</span></p>
+        </div>
+      </form>
+
 
     </div>
 
@@ -47,10 +55,20 @@
 
           <img src="assets/logo.png" alt="logo-avanti">
 
-          <div class="container-search container-search-desktop">
-            <input type="text" name="search" class="i-text i-search-desktop" placeholder="Digite aqui o que você procura">
-            <img src="assets/lupa.png" alt="search" id="search-icon">
-          </div>
+          <form class="container-search container-search-desktop">
+            <input type="text" name="search" class="i-text i-search-desktop" placeholder="Digite aqui o que você procura" required>
+
+            <button type="submit">
+
+              <img src="assets/lupa.png" alt="search" id="search-icon">
+              
+            </button>
+
+            <div class="search-result">
+              <p>Você buscou por: <span class="subject">assunto</span></p>
+            </div>
+    
+          </form>
 
         </div>
 

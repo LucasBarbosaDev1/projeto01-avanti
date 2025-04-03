@@ -1,3 +1,36 @@
+// resultado da pesquisa
+const cBody = document.querySelector('body');
+const containerSearch = document.querySelectorAll('.container-search');
+const subject = document.querySelectorAll('.subject');
+const divSearchResult = document.querySelectorAll('.search-result');
+
+containerSearch.forEach(form => {
+  form.addEventListener('submit', (ev) => {
+    ev.preventDefault();
+
+    const resultSearch = form.elements['search'].value;
+
+    subject.forEach(item => {
+      item.innerText = resultSearch;
+    });
+
+    divSearchResult.forEach(div => {
+      div.style.display = 'flex';
+    });
+
+    form.reset();
+    
+  });
+});
+
+cBody.addEventListener('click', () => {
+
+  divSearchResult.forEach(div => {
+    div.style.display = 'none';
+  });
+
+});
+
 // collapse nav desktop header
 const cotainer2Header = document.querySelector('#cotainer2-header');
 const allCategories = document.querySelector('#primary-li');
