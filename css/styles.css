@@ -51,6 +51,10 @@ header{
   justify-content: space-between;
 }
 
+#menu{
+  font-size: 22px;
+}
+
 .logo{
   width: 148px;
 }
@@ -60,6 +64,11 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.c-cart > i {
+  font-size: 22px;
+  cursor: pointer;
 }
 
 .qnt-products{
@@ -73,7 +82,7 @@ header{
   border-radius: 100%;
   font-size: 12px;
   position: absolute;
-  top: -10px;
+  top: -15px;
   right: -10px;
 }
 
@@ -112,6 +121,7 @@ header{
   border: none;
   background-color: transparent;
   cursor: pointer;
+  font-size: 18px;
 }
 
 .search-result{
@@ -188,7 +198,9 @@ header{
   line-height: 14px;
 }
 
-#user-icon{
+#c-user > i {
+  font-size: 22px;
+  color: #005CFF;
   cursor: pointer;
 }
 
@@ -486,8 +498,7 @@ header{
 
 .arrow-left{
   left: 2px;
-  rotate: 180deg;
-  box-shadow: 0 -5px 4px #00000041;
+  box-shadow: 0 5px 4px #00000041;
 }
 
 .arrow-right{

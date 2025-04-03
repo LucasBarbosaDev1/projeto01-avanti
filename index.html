@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="js/script.js" defer></script>
   <title>Projeto 01</title>
 </head>
@@ -20,14 +21,14 @@
       <div id="cotainer1-header">
 
         <nav id="menu">
-          <img src="assets/menu.png" alt="menu-hamburger" id="icon-menu">
+          <i class="fa-solid fa-bars"></i>
         </nav>
 
         <img src="assets/logo.png" alt="logo-avanti" class="logo">
 
         <div class="c-cart">
           <div class="qnt-products">2</div>
-          <img src="assets/carrinho.png" alt="carrinho">
+          <i class="fa-solid fa-cart-shopping"></i>
         </div>
 
       </div>
@@ -36,7 +37,7 @@
         <input type="text" name="search" class="i-text" placeholder="Digite aqui o que você procura" required>
 
         <button type="submit">
-          <img src="assets/lupa.png" alt="lupa-pesquisa">
+          <i class="fa-solid fa-magnifying-glass"></i>
         </button>
 
         <div class="search-result">
@@ -60,7 +61,7 @@
 
             <button type="submit">
 
-              <img src="assets/lupa.png" alt="search" id="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
               
             </button>
 
@@ -75,13 +76,13 @@
         <div id="container-user">
 
           <div id="c-user">
-            <img src="assets/user.png" alt="usuario" id="user-icon">
+            <i class="fa-solid fa-user"></i>
             <p>Olá,<br>Nome cliente!</p>
           </div>
 
           <div class="c-cart">
             <div class="qnt-products">2</div>
-            <img src="assets/carrinho.png" alt="carrinho" id="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
           </div>
 
         </div>
@@ -92,7 +93,7 @@
 
         <ul id="nav-list">
           <li id="primary-li">
-            <img src="assets/menu.png" alt="menu-hamburger" id="menu-desktop">
+            <i class="fa-solid fa-bars"></i>
             Todas as categorias
           </li>
           <li class="category">Departamento</li>
@@ -416,8 +417,13 @@
 
       </div>
 
-      <div class="arrow arrow-left" onclick="scrollCarousel(-1)">&#10140;</div>
-      <div class="arrow arrow-right" onclick="scrollCarousel(1)">&#10140;</div>
+      <div class="arrow arrow-left" onclick="scrollCarousel(-1)">
+        <i class="fa-solid fa-arrow-left"></i>
+      </div>
+
+      <div class="arrow arrow-right" onclick="scrollCarousel(1)">
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
 
     </section>
 
@@ -655,8 +661,13 @@
 
       </div>
 
-      <div class="arrow arrow-left" onclick="scrollCarousel(-1)">&#10140;</div>
-      <div class="arrow arrow-right" onclick="scrollCarousel(1)">&#10140;</div>
+      <div class="arrow arrow-left" onclick="scrollCarousel(-1)">
+        <i class="fa-solid fa-arrow-left"></i>
+      </div>
+
+      <div class="arrow arrow-right" onclick="scrollCarousel(1)">
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
 
     </section>
 
@@ -759,7 +770,7 @@
 
           <button class="collapse-button" onclick="btnCollapse('collapse1')">
             <h4>Institucional</h4>
-            <span>&#9207;</span>
+            <span><i class="fa-solid fa-chevron-down"></i></span>
           </button>
 
           <div class="collapse-content content1">
@@ -777,7 +788,7 @@
 
           <button class="collapse-button" id="btn2" onclick="btnCollapse('collapse2')">
             <h4>Central de ajuda</h4>
-            <span>&#9207;</span>
+            <span><i class="fa-solid fa-chevron-down"></i></span>
           </button>
 
           <div class="collapse-content content2">
@@ -796,7 +807,7 @@
 
           <button class="collapse-button" onclick="btnCollapse('collapse3')">
             <h4>Atendimento</h4>
-            <span>&#9207;</span>
+            <span><i class="fa-solid fa-chevron-down"></i></span>
           </button>
 
           <div class="collapse-content content3">
@@ -827,7 +838,7 @@
 
         <div>
 
-          <img src="assets/b-1.png" alt="icone-b1">
+          <img src="assets/diners.png" alt="icone-diners">
           <img src="assets/paypal.png" alt="icone-paypal">
           <img src="assets/pix.png" alt="icone-pix">
           <img src="assets/boleto.png" alt="icone-boleto">
