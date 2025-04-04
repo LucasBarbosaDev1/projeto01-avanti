@@ -1,0 +1,397 @@
+/* ---header--- */
+header{
+  position: fixed;
+  z-index: 2;
+  background-color: #fff;
+  box-shadow: 0 0 5px #0000005b;
+  width: 100%;
+}
+
+/* alerta de promocao */
+#alert-sale{
+  background-color: var(--primary-color);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  padding: 5px;
+}
+
+#discount{
+  background-color: #6220C1;
+  padding: 0 5px;
+  border-radius: 4px;
+}
+
+#coupon{
+  font-weight: 400;
+}
+
+/* header mobile */
+#c-header-mobile{
+  padding: 16px;
+}
+
+#cotainer1-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#menu{
+  font-size: 22px;
+}
+
+.logo{
+  width: 148px;
+}
+
+.c-cart{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-cart > i {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.qnt-products{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: #fff;
+  width: 21px;
+  height: 21px;
+  border-radius: 100%;
+  font-size: 12px;
+  position: absolute;
+  top: -15px;
+  right: -10px;
+}
+
+.container-search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #DDDDDD;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 0 10px;
+  position: relative;
+}
+
+.i-text{
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.i-text::placeholder{
+  color: #000;
+  font-size: 14px;
+}
+
+.i-text:focus{
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.container-search > button {
+  padding: 3px;
+  display: flex;  
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.search-result{
+  background-color: #fff;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: -55px;
+  display: none;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: 1px solid #838383;
+}
+
+.subject{
+  font-weight: 700;
+}
+
+/* header desktop */
+#c-header-desktop{
+  display: none;
+  padding: 16px 16px 0px 16px;
+  width: 100%;
+  max-width: 1260px;
+  margin: auto;
+}
+
+#cotainer2-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#cotainer2-header{
+  display: flex;
+}
+
+#container-logo{
+  display: flex;
+  width: 65%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8%;
+}
+
+.container-search-desktop{
+  width: 100%;
+  max-width: 595px;
+  margin-top: 0;
+}
+
+.i-search-desktop{
+  width: 100%;
+}
+
+#search-icon{
+  cursor: pointer;
+}
+
+#container-user{
+  display: flex;
+  gap: 25px;
+}
+
+#c-user{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+#c-user > i {
+  font-size: 22px;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+#cart-icon{
+  cursor: pointer;
+}
+
+/* nav desktop */
+#nav-desktop{
+  margin-top: 20px;
+}
+
+#nav-list{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+#nav-list > li{
+  cursor: pointer;
+  padding-bottom: 16px;
+}
+
+#nav-list > li:hover {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+#primary-li{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 700;
+}
+
+#menu-desktop{
+  width: 14px;
+}
+
+/* collapse nav */
+#collapse-nav-header{
+  display: none;
+  position: absolute;
+  bottom: -330px;
+  width: 100%;
+  height: 330px;
+  max-width: 1260px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #fff;
+  justify-content: space-between;
+  box-shadow: 0 5px 5px #00000027;
+}
+
+#collapse-items {
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F5F5;
+  min-width: 235px;
+  height: 100%;
+  font-size: 14px;
+  padding: 16px;
+  gap: 12px;
+  overflow-y: scroll;
+}
+
+#collapse-items::-webkit-scrollbar{
+  width: 5px;
+}
+
+#collapse-items::-webkit-scrollbar-track{
+  background-color: #F5F5F5;
+}
+
+#collapse-items::-webkit-scrollbar-thumb {
+  background-color: #CECECE;
+  border-radius: 5px;
+}
+
+#collapse-items > span {
+  cursor: pointer;
+  color: #303030;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#collapse-items > span:hover{
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+#collapse-categories-root{
+  padding: 20px;
+}
+
+#collapse-categories-title {
+  display: none;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+#collapse-categories{
+  width: 100%;
+  display: flex;
+  gap: 150px;
+}
+
+.categories{
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  gap: 12px;
+}
+
+.categories > span {
+  color: #656565;
+  cursor: pointer;
+}
+
+.categories > span:hover{
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+#collapse-image{
+  padding: 16px;
+  position: relative;
+  width: 400px;
+}
+
+#div-image{
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background-image: url('../assets/image2.webp');
+  background-size: cover;
+  width: 235px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 0 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+#div-image > p{
+  color: #fff;
+  font-size: 24px;
+  text-shadow: 0 0 9px #000;
+}
+
+#div-image > p > span{
+  font-weight: 700;
+}
+
+#div-image > input{
+  width: 116px;
+  height: 38px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 9px #000;
+  box-shadow: 0 0 9px #000;
+  cursor: pointer;
+}
+
+#div-image > input:hover{
+  background-color: #005effc4;
+  border: none;
+  transition: .2s;
+}
+
+@media (min-width: 768px) {
+    /* ---header--- */
+  /* header mobile */
+  #alert-sale{
+    flex-direction: row;
+  }
+
+}
+
+@media (min-width: 1024px) {
+    /* ---header--- */
+  /* header mobile */
+  #c-header-mobile{
+    display: none;
+  }
+
+  /* header desktop */
+  #c-header-desktop{
+    display: block;
+  }
+
+}

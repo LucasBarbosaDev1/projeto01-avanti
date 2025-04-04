@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print", onload="this.media='all'"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
   <script src="js/script.js" defer></script>
   <title>Projeto 01</title>
 </head>
@@ -37,7 +41,7 @@
       <form class="container-search">
         <input type="text" name="search" class="i-text" placeholder="Digite aqui o que você procura" required>
 
-        <button type="submit">
+        <button type="submit" aria-label="Pesquisar">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
 
@@ -60,7 +64,7 @@
           <form class="container-search container-search-desktop">
             <input type="text" name="search" class="i-text i-search-desktop" placeholder="Digite aqui o que você procura" required>
 
-            <button type="submit">
+            <button type="submit" aria-label="Pesquisar">
 
               <i class="fa-solid fa-magnifying-glass"></i>
               

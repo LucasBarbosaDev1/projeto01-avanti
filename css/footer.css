@@ -1,0 +1,184 @@
+/* ---footer--- */
+/* section redes sociais */
+footer{
+  width: 100%;
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#c-footer1{
+  width: 100%;
+  max-width: 1177px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#social-media{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 0;
+}
+
+#links-social-media{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* nav footer mobile */
+#nav-footer-mobile{
+  width: 100%;
+}
+
+.collapse{
+  width: 100%;
+  border: 1px solid #DDDDDD;
+}
+
+.collapse-button{
+  padding: 14px 12px;
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.collapse-button > span {
+  color: var(--primary-color);
+}
+
+.button-active{
+  rotate: 180deg;
+}
+
+.collapse-content{
+  display: none;
+  line-height: 25px;
+  padding: 5px 14px 12px 12px;
+}
+
+.collapse-active{
+  display: block !important;
+}
+
+.collapse-topics {
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.topic-emphasis {
+  font-weight: 700;
+}
+
+.collapse-p {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* nav footer desktop */
+#nav-footer-desktop{
+  display: none;
+}
+
+#paymentMethods{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 0 20px 0;
+}
+
+#paymentMethods > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* nav desktop */
+#nav-footer-desktop{
+  display: none;
+  width: 100%;
+  padding: 0 16px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 100px;
+}
+
+.c-navs{
+  line-height: 28px;
+}
+
+.c-navs > h4{
+  margin-bottom: 10px;
+}
+
+/* section projeto */
+#c-project{
+  width: 100%;
+  background-color: #fff;
+  padding: 40px 16px;
+}
+
+#project-p{
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0 auto 30px auto;
+  max-width: 1177px;
+}
+
+#project-logos{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+@media (min-width: 1024px) {
+
+  /* ---footer--- */
+  #c-footer1{
+    padding: 40px 16px;
+  }
+
+  #footer-dektop{
+    display: flex;
+    gap: 100px;
+  }
+
+  #social-media{
+    padding: 5px;
+  }
+
+  #nav-footer-mobile{
+    display: none;
+  }
+
+  #nav-footer-desktop{
+    display: flex;
+  }
+
+  #paymentMethods{
+    flex-direction: row;
+    padding: 40px 0 0 0;
+  }
+}
