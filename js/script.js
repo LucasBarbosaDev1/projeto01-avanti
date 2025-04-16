@@ -1,5 +1,27 @@
-// resultado da pesquisa
+// menu hamburger mobile
 const cBody = document.querySelector('body');
+const menu = document.querySelector('#menu');
+const navMobile = document.querySelector('#background-nav');
+const closeNav = document.querySelector("#close-nav");
+
+menu.addEventListener('click', () => {
+  navMobile.style.display = "block";
+  cBody.style.overflowY = "hidden";
+});
+
+closeNav.addEventListener('click', () => {
+  navMobile.style.display = "none";
+  cBody.style.overflowY = "scroll";
+});
+
+navMobile.addEventListener('click', (ev) => {
+  if (ev.target.id === "background-nav") {
+    navMobile.style.display = "none";
+    cBody.style.overflowY = "scroll";
+  }
+})
+
+// resultado da pesquisa
 const containerSearch = document.querySelectorAll('.container-search');
 const subject = document.querySelectorAll('.subject');
 const divSearchResult = document.querySelectorAll('.search-result');
